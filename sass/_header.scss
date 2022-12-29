@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 16px;
+  margin-bottom: 56px;
+  width: 343px;
+  height: 48px;
+  @include md{
+    width: 689px;
+    height: 56px;
+    margin: 40px;
+    margin-bottom: 0;
+  }
+  @include xl{
+    width: 1108px;
+    height: 56px;
+    margin: 50px 166px;
+  }
+  &__logo {
+    width: 81px;
+    height: 32px;
+    cursor: pointer;
+    @include xl {
+      width: 78px;
+      height: 24px;
+    }
+  }
+  &__button {
+    @include button(182px, 48px);
+    @include md {
+      @include button(219px, 56px);
+    }
+      &:hover {
+        background-color: black;
+        color: white;
+
+}
+  }
+}

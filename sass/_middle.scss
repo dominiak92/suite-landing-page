@@ -1,0 +1,130 @@
+@include md {
+  .middle-wrapper {
+    margin-top: 120px;
+  }
+}
+
+.slogan-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 343px;
+  margin: 0 auto;
+  position: relative;
+  @include md {
+    margin-right: 300px;
+  }
+  .slogan {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    @include md {
+      align-items: flex-start;
+      position: relative;
+      left: -23px;
+    }
+    @include xl {
+      left: -235px;
+    }
+    &__curved-line {
+      width: 151px;
+      height: 19px;
+      background: url("./../starter-code/assets/pattern-curved-line-1.svg");
+      background-size: cover;
+      margin-bottom: 8px;
+      margin-right: 37px;
+      align-self: flex-end;
+      @include md {
+        width: 231px;
+        height: 29px;
+      }
+      @include xl {
+        width: 287px;
+        height: 36px;
+        margin-right: 55px;
+      }
+    }
+    &__slogan {
+      display: block;
+      width: 343px;
+      height: 89px;
+      font-size: 38px;
+      margin: 0;
+      color: #172339;
+      @include md {
+        width: 486px;
+        height: 129px;
+        font-size: 56px;
+        letter-spacing: -0.78px;
+        line-height: 64px;
+      }
+      @include xl {
+        width: 635px;
+        height: 156px;
+        font-size: 72px;
+        letter-spacing: -1px;
+        line-height: 78px;
+      }
+    }
+    &__fat {
+      font-weight: 700;
+    }
+  }
+  .text-in-middle {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.09px;
+    font-weight: 400;
+    color: #49566d;
+    @include md {
+      width: 350px;
+      height: 84px;
+      margin: 40px 0;
+    }
+    @include xl {
+      font-size: 18px;
+      line-height: 32px;
+      letter-spacing: 0.1px;
+    }
+  }
+  .button-in-middle {
+    @include gradientbtn(256px, 61px);
+    background-color: #172339;
+    color: #faf8f6;
+    font-size: 18px;
+    margin-top: 32px;
+    margin-right: 87px;
+    &:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+      }
+    @include md {
+      margin-top: 0;
+      width: 256px;
+      height: 61px;
+    }
+  }
+  .phone-image-middle {
+    margin-top: 55px;
+    width: 343px;
+    height: 240px;
+    background: url("./../starter-code/assets/image-hero-landscape.png");
+    @include md {
+      background: url("./../starter-code/assets/image-hero-portrait.png");
+      position: absolute;
+      background-size: contain;
+      width: 281px;
+      height: 482px;
+      left: 385px;
+      top: -89px;
+      z-index: -1;
+    }
+    @include xl {
+      height: 600px;
+      width: 350px;
+      left: 249px;
+      top: -275px;
+      margin-top: 173px;
+    }
+  }
+}

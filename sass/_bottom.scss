@@ -1,0 +1,114 @@
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #172339;
+    border-radius: 15px;
+    position:relative;
+    width: 375px;
+    height: 748px;
+    text-align: center;
+    @include md{
+        width: 689px;
+        flex-shrink: 0;
+    }
+    @include xl{
+        width: 1109px;
+        height: 545px;
+        margin-top: -470px;
+        text-align: left;
+        flex-direction: row;
+
+    }
+    &__image{
+        position: absolute;
+        margin: 16px;
+        top: -191px;
+        width: 343px;
+        height: 402px;
+        background: url('./../starter-code/assets/image-jeremy-small.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include xl {
+            height: 589px;
+            width: 359px;
+            background: url('./../starter-code/assets/image-jeremy-large.png');
+            top: -60px;
+            left: 0;
+            margin-left: 121px;
+        }
+    }
+    &__curved-line {
+        width: 49px;
+        height: 40px;
+        margin-top: 241px;
+        background: url('./../starter-code/assets/pattern-curved-line-2.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        @include md {
+            margin-top: 190px;
+        }
+        @include xl {
+            position: relative;
+            left: 290px;
+            width: 64px;
+            height: 52px;
+            top: -180px;
+        }
+    }
+    &__text {
+        color: $white;
+        @include xl {
+            position: relative;
+            width: 350px;
+            left: 200px;
+            top: -10px;
+            margin: 88px 125px;
+        }
+    }
+    &__big-slogan {
+        font-size: 40px;
+        @include xl{
+            font-size: 48px;
+        }
+    }
+    &__fat-one {
+        font-weight: $fat-font;
+    }
+    &__quote {
+        font-size: 18px;
+        display: block;
+        width: 343px;
+        height: 160px;
+        line-height: 32px;
+        letter-spacing: 0.09px;
+        margin: 40px 16px;
+        color: $cream;
+        @include md {
+            width: 573px;
+            height: 96px;
+        }
+        @include xl {
+            margin: 40px 0;
+            font-size: 20px;
+            width: 350px;
+            height: 175px;
+        }
+    }
+    &__author {
+        font-weight: $fat-font;
+        letter-spacing: -0.18px;
+        @include xl {
+            font-size: 18px;
+        }
+    }
+    &__position {
+        letter-spacing: 2.5px;
+        color: $cream;
+        @include xl {
+            font-size: 18px;
+        }
+    }
+}

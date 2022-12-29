@@ -1,0 +1,35 @@
+@mixin button($width, $height){
+    width: $width;
+    height: $height;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: -0.14px;
+    background-color: white;
+    border: 1px solid #172339;
+    border-radius: 6px;
+    transition: 0.2s linear;
+    cursor: pointer;
+    @include md {
+        font-size: 16px;
+    }
+}
+
+@mixin gradientbtn ($width, $height){
+    width: $width;
+    height: $height;
+    background-image: linear-gradient(to right, #ffa84e 0%, #cb30e3  51%, #cb30e3  100%);
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    border: 0px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    display: block;
+    cursor: pointer;
+};
