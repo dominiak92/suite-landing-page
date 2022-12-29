@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [LIVE SITE](https://dominiak92.github.io/suite-landing-page/)
 
 ### Built with
 
