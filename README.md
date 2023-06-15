@@ -1,6 +1,4 @@
-# Frontend Mentor - Suite landing page solution
-
-This is a solution to the [Suite landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/suite-landing-page-tj_eaU-Ra). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+# Suite landing page
 
 ## Table of contents
 
@@ -33,4 +31,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@sebix0nus](https://www.frontendmentor.io/profile/sebix0nus)
+- [Sebastian Dominiak](https://www.sebastiandominiak.pl)
